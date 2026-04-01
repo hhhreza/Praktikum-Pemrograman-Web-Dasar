@@ -1,0 +1,31 @@
+body{
+    background-color: #91C8E4;
+}
+
+.navbar-atas{
+    background-color: black;
+}
+
+.informasi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+   font-weight: bold;
+   font-style: italic;
+}
+
+.gambar-kucing{
+    width: 12cm;
+    height: 500px;
+    object-fit: contain;
+
+}
+
+.kotak{
+    max-width: 900px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
