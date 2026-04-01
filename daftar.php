@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="daftar.php">Daftar</a>
+                    <a class="nav-link active" href="daftar.php">Daftar</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="design.php">Design</a>
