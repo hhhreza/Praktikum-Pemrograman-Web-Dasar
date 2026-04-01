@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="tampilan.css">
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-atas" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">Komunitas Kucing</a>
@@ -34,13 +35,13 @@
     <div class="container informasi">
         <h2 class="header">Selamat Datang di Komunitas Kucing</h2>
 
-        <div class="gambar row">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-5">
                 <img src="kucing.jpg" alt="Kucing" class="gambar-kucing">
             </div>
       
 
-            <div class="col-md-7 text">
+            <div class="col-md-7">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae soluta incidunt animi tempora distinctio iure sit laboriosam obcaecati impedit repellat accusamus labore nam commodi corporis possimus blanditiis odit earum?</p>
 
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque, veniam ipsum, at soluta non dignissimos, fuga odio laudantium incidunt tempore laborum quasi et fugit facere ipsa harum cupiditate delectus.</p>
@@ -58,8 +59,8 @@
         </div>
 
 
-        <a class="btn btn-primary" href="https://wolipop.detik.com/home/d-5180681/15-jenis-kucing-peliharaan-yang-populer-menggemaskan-dan-mudah-dirawat" role="button" target="_blank">Informasi Lebih Lanjut</a>
-        
+        <a class="btn btn-primary mt-3" href="https://wolipop.detik.com/home/d-5180681/15-jenis-kucing-peliharaan-yang-populer-menggemaskan-dan-mudah-dirawat" role="button" target="_blank">Informasi Lebih Lanjut</a>
+
     </div>
 </body>
 </html>
