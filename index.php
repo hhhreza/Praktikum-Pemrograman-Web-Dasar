@@ -22,7 +22,7 @@
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="login.php">Daftar</a>
+                    <a class="nav-link" href="daftar.php">Daftar</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="design.php">Design</a>
@@ -33,7 +33,7 @@
     </nav>
 
     <div class="container informasi">
-        <h2 class="header">Selamat Datang di Komunitas Kucing</h2>
+        <h2 class="header mb-5">Selamat Datang di Komunitas Kucing</h2>
 
         <div class="row">
             <div class="col-md-5">
@@ -41,20 +41,24 @@
             </div>
       
 
-            <div class="col-md-7">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae soluta incidunt animi tempora distinctio iure sit laboriosam obcaecati impedit repellat accusamus labore nam commodi corporis possimus blanditiis odit earum?</p>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque, veniam ipsum, at soluta non dignissimos, fuga odio laudantium incidunt tempore laborum quasi et fugit facere ipsa harum cupiditate delectus.</p>
-
-                <h5>Jenis-Jenis Kucing</h5>
-                <ol>
-                    <li>Kucing Persia</li>
-                    <li>Kucing Maine Coon</li>
-                    <li>Kucing American Shorthair</li>
-                    <li>Kucing Sphynxes</li>
-                    <li>Kucing British Shorthair</li>
-                    <li>DLL.</li>
-                </ol>
+            <div class="col-md-7"> 
+                <div class="card deskripsi mb-4">   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae soluta incidunt animi tempora distinctio iure sit laboriosam obcaecati impedit repellat accusamus labore nam commodi corporis possimus blanditiis odit earum?</p>
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque, veniam ipsum, at soluta non dignissimos, fuga odio laudantium incidunt tempore laborum quasi et fugit facere ipsa harum cupiditate delectus.</p>
+                </div>
+                    
+                <div class="card jenis">
+                    <h5>Jenis-Jenis Kucing</h5>
+                    <ol>
+                        <li>Kucing Persia</li>
+                        <li>Kucing Maine Coon</li>
+                        <li>Kucing American Shorthair</li>
+                        <li>Kucing Sphynxes</li>
+                        <li>Kucing British Shorthair</li>
+                        <li>DLL.</li>
+                    </ol>
+                </div>
             </div>
         </div>
 
