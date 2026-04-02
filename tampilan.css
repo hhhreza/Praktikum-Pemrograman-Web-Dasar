@@ -11,6 +11,25 @@ body{
     margin-bottom: 20px;
 }
 
+.deskripsi, .jenis{
+    font-size: 16.5px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.deskripsi{
+    width: 100%;
+}
+
+.jenis{
+    width: 100%;
+}
+
+
+h5{
+    font-weight: bold;
+}
+
 .header{
    font-weight: bold;
    font-style: italic;
@@ -21,6 +40,12 @@ body{
     height: 500px;
     object-fit: contain;
 
+}
+
+.gambar-design{
+    width: 500px;
+    height: 260px;
+    object-fit:cover;
 }
 
 .kotak{
