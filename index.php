@@ -1,3 +1,7 @@
+<?php
+session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,9 +47,9 @@
 
             <div class="col-md-7"> 
                 <div class="card deskripsi mb-4">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae soluta incidunt animi tempora distinctio iure sit laboriosam obcaecati impedit repellat accusamus labore nam commodi corporis possimus blanditiis odit earum?</p>
+                    <p> Kucing adalah hewan peliharaan yang luar biasa dengan sejarah panjang dan beragam manfaat. Dari membantu mengendalikan hama hingga memberikan dukungan emosional, kucing telah membuktikan diri sebagai teman setia dan bermanfaat bagi manusia. Jika Anda mempertimbangkan untuk memelihara kucing, pastikan untuk memberikan perawatan yang tepat, termasuk makanan bergizi, tempat tinggal yang aman, dan perhatian medis yang teratur.</p>
                     
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque, veniam ipsum, at soluta non dignissimos, fuga odio laudantium incidunt tempore laborum quasi et fugit facere ipsa harum cupiditate delectus.</p>
+                    <p> Saat ini, kucing adalah salah satu hewan peliharaan terpopuler di dunia. Kucing yang garis keturunannya tercatat secara resmi sebagai kucing trah atau galur murni (pure breed) contohnya persia, siam, manx, dan sphinx. Kucing seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi.</p>
                 </div>
                     
                 <div class="card jenis">
@@ -61,9 +65,7 @@
                 </div>
             </div>
         </div>
-
-
-        <a class="btn btn-primary mt-3" href="https://wolipop.detik.com/home/d-5180681/15-jenis-kucing-peliharaan-yang-populer-menggemaskan-dan-mudah-dirawat" role="button" target="_blank">Informasi Lebih Lanjut</a>
+        <a class="btn btn-primary mb-3 ms-5" href="https://wolipop.detik.com/home/d-5180681/15-jenis-kucing-peliharaan-yang-populer-menggemaskan-dan-mudah-dirawat" role="button" target="_blank">Informasi Lebih Lanjut</a>
 
     </div>
 </body>

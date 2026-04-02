@@ -1,3 +1,34 @@
+<?php 
+session_start();
+include 'koneksi.php'; 
+
+if (isset($_POST['submit_daftar'])) {
+    $nama      = $_POST['nama'];
+    $tgl_lahir = $_POST['tgl_lahir'];
+    $umur      = $_POST['umur'];
+    $j_kelamin = $_POST['j_kelamin']; 
+    $daerah    = $_POST['daerah'];
+    $alasan    = $_POST['alasan'];
+    
+    $hobi = "";
+    if (isset($_POST['hobi'])) {
+        $hobi = implode(", ", $_POST['hobi']); 
+    }
+
+    $query = "INSERT INTO daftar (nama, tgl_lahir, umur, j_kelamin, hobi, daerah, alasan) 
+              VALUES ('$nama', '$tgl_lahir', '$umur', '$j_kelamin', '$hobi', '$daerah', '$alasan')";
+    
+    if (mysqli_query($koneksi, $query)) {
+        $_SESSION['sudah_daftar'] = true;
+        header('Location: design.php');
+        exit();
+    } else {
+        echo "<script>alert('Gagal mendaftar: " . mysqli_error($koneksi) . "');</script>";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +61,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+</nav>
 
     <div class="container informasi">
         <h3 class="text-center mb-4">Pendaftaran Komunitas Kucing
@@ -38,7 +69,7 @@
 
             <div class="card kotak">
                 <div class="card-body">
-                    <form action="design.php" method="POST">
+                    <form action="" method="POST">
 
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
@@ -79,12 +110,12 @@
                                 <label for="membaca">Membaca</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="hobi[]" id="berkebun" value="berkebun">
-                                <label for="berkebun">Berkebun</label>
+                                <input type="checkbox" name="hobi[]" id="main game" value="main game">
+                                <label for="main game">Main game</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="hobi[]" id="memasak" value="memasak">
-                                <label for="memasak">Memasak</label>
+                                <input type="checkbox" name="hobi[]" id="ngoding" value="ngoding">
+                                <label for="ngoding">Ngoding</label>
                             </div>
                             <div>
                                 <input type="checkbox" name="hobi[]" id="olahraga" value="olahraga">
@@ -101,7 +132,7 @@
                             <textarea class="form-control" id="alasan" name="alasan" rows="3"></textarea>
                         </div>
 
-                        <a href="design.php"><button type="submit" class="btn btn-success mt-3 w-100">KIRIM PENDAFTARAN</button></a>
+                        <button type="submit" name="submit_daftar" class="btn btn-success mt-3 w-100">KIRIM PENDAFTARAN</button>
                     </form>
 
                 </div>

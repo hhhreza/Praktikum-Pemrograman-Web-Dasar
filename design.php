@@ -1,3 +1,16 @@
+<?php
+session_start();
+include "koneksi.php";
+
+if (!isset($_SESSION['sudah_daftar']) || $_SESSION['sudah_daftar'] != true) {
+    echo "<script>
+            alert('Akses ditolak! Anda harus mendaftar terlebih dahulu.');
+            window.location.href = 'index.php';
+          </script>";
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,10 +44,14 @@
         </div>
 </nav>
 
-    <div class="container informasi">
-        <h2 class="header text-center mt-5">Design Laboratory</h2>
+    <div class="container design">
+        <h2 class="header text-center mt-5">Design Laboratory</h2> 
+        <p class="text-center">Image Effect</p>
+        <div class="text-center">
+            <img src="kucingdesign.jpg" alt="Design Kucing" class="gambar-design mt-2">
+        </div>
 
-        
+    </div>
 
     
 </body>
